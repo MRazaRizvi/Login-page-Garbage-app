@@ -1,0 +1,207 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body{
+
+			background-image: url(19.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 520px; 
+			background-position: center;
+		}
+
+		.btn{
+			position: relative;
+			display: block;
+			color: white;
+			text-decoration: none;
+			font-size: 18px;
+			background: #184965;
+			margin: 30px 0;
+			border:2px solid #62B6CB;
+			border-radius: 5px;
+			padding: 14px 60px;
+			overflow: hidden;
+
+		}
+
+		.middle{
+			top: 30%;
+			left: 10%;
+			position: absolute;
+			transform: translate(-30%,-10%);
+			
+			
+			
+		}
+
+		.btn:before{
+			content: "";
+			top: 30%;
+			left: 10%;
+			position: absolute;
+			transform: translate(-30%,-10%);
+			z-index: -1;
+			transition: all 0.6 ease;
+
+
+
+		}
+
+		.btn::before{
+			width: 0;
+			height: 100%;
+		}
+
+		.btn:hover{
+			width:90%;
+		}
+
+           .loginbox{
+                   
+                   width:380px;
+	               height:400px;
+	               box-sizing:border-box;
+	               border-radius: 5px;
+
+	               background:rgb(0,0,0,0.8);
+	               color:#fff;
+	               top: 29%;
+	               left: 63%;
+	               position: absolute;
+	               padding:70px 30px;
+                  
+	               
+
+           }
+
+                          .loginbox p{
+	                                  margin:0;
+	                                  padding:0;
+	                                 font-weight:bold;
+                                    }
+
+                          .loginbox input{
+                                 	width:100%;
+	                                margin-bottom:20px;
+                                        }
+
+                          .loginbox input[type="username"], input[type="password"]{
+	
+	                                 border:none;
+	                                 border-bottom:1px solid #fff;
+	                                 background:transparent;
+	                                 outline:none;
+	                                 height:40px;
+	                                 color:#fff;
+	                                 font-size:16px;
+                                        }
+
+                     .loginbox input[type="submit"]
+                      {
+	                         border:none;
+	                         outline:none;
+	                         height:40px;
+	                         background:#fb2525;
+	                         color:#fff;
+	                         font-size:18px;
+	                         border-radius:20px;
+
+                               }
+                     
+                       .loginbox input[type="submit"]:hover
+                     {
+	                             cursor:pointer;
+	                             background:#FF0;
+	                              color:#000;
+                               }
+
+         
+		 
+		 
+		 
+		 
+		  @media (min-width: 320px) and (max-width: 720px) {
+			  
+			  .loginbox{
+				  
+				  
+				  
+	              
+	               top: 35%;
+	               left: 14%;
+	               position: absolute;
+	               
+				  
+				 
+			  }
+		  }
+				  
+		@media only screen and (min-width:720px) {
+            .hide-on-desktop, * [aria-labelledby='hide-on-desktop'] {
+                display: none;
+                max-height: 0;
+                overflow: hidden;
+				
+            }
+        }
+
+     @media (min-width: 320px) and (max-width: 721px) {
+		 
+		 .middle{
+			 display:none;
+		 }
+	 }
+	 
+	 
+	 
+	 .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  
+  
+  padding-top:-15px;
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+	

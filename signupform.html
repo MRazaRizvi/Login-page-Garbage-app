@@ -1,0 +1,332 @@
+<doctype html!>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<html>
+<head>
+
+<title>signup</title>
+
+
+	<style type="text/css">
+
+
+		body{
+
+			background-image: url(19.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 520px; 
+			background-position: center;
+		}
+
+		.btn{
+			position: relative;
+			display: block;
+			color: white;
+			text-decoration: none;
+			font-size: 18px;
+			background: #184965;
+			margin: 30px 0;
+			border:2px solid #62B6CB;
+			border-radius: 5px;
+			padding: 14px 60px;
+			overflow: hidden;
+
+		}
+
+		.middle{
+			top: 30%;
+			left: 10%;
+			position: absolute;
+			transform: translate(-30%,-10%);
+			
+			
+			
+		}
+
+		.btn:before{
+			content: "";
+			top: 30%;
+			left: 10%;
+			position: absolute;
+			transform: translate(-30%,-10%);
+			z-index: -1;
+			transition: all 0.6 ease;
+
+
+
+		}
+
+		.btn::before{
+			width: 0;
+			height: 100%;
+		}
+
+		.btn:hover{
+			width:90%;
+		}
+
+           .loginbox{
+                   
+                   width:380px;
+	               height:430px;
+	               box-sizing:border-box;
+	               border-radius: 5px;
+
+	               background:rgb(0,0,0,0.8);
+	               color:#fff;
+	               top: 29%;
+	               left: 63%;
+	               position: absolute;
+	               padding:70px 30px;
+                  
+	               
+
+           }
+
+                          .loginbox p{
+	                                  margin:0;
+	                                  padding:0;
+	                                 font-weight:bold;
+                                    }
+
+                          .loginbox input{
+                                 	width:100%;
+	                                margin-bottom:20px;
+                                        }
+
+                          .loginbox input[type="username"], input[type="password"]{
+	
+	                                 border:none;
+	                                 border-bottom:1px solid #fff;
+	                                 background:transparent;
+	                                 outline:none;
+	                                 height:40px;
+	                                 color:#fff;
+	                                 font-size:16px;
+                                        }
+
+                     .loginbox input[type="submit"]
+                      {
+	                         border:none;
+	                         outline:none;
+	                         height:40px;
+	                         background:#fb2525;
+	                         color:#fff;
+	                         font-size:18px;
+	                         border-radius:20px;
+
+                               }
+                     
+                       .loginbox input[type="submit"]:hover
+                     {
+	                             cursor:pointer;
+	                             background:#FF0;
+	                             color:#000;
+                               }
+
+         
+		 
+		 
+		 
+		  @media (min-width: 320px) and (max-width: 720px) {
+			  
+			  .loginbox{
+				  
+				  
+				  
+	              
+	               top: 32%;
+	               left: 14%;
+	               position: absolute;
+	               
+				  
+				 
+			  }
+		  }
+				  
+		@media only screen and (min-width:720px) {
+            .hide-on-desktop, * [aria-labelledby='hide-on-desktop'] {
+                display: none;
+                max-height: 0;
+                overflow: hidden;
+				
+            }
+        }
+
+     @media (min-width: 320px) and (max-width: 721px) {
+		 
+		 .middle{
+			 display:none;
+		 }
+	 }
+	 
+	 
+	 
+	 .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:#FFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color:#666;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  
+  
+  padding-top:-15px;
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sidenav h{
+	color:#FFF;
+}
+
+
+.act{
+  background-color:#fb2525;
+ color: #f1f1f1;
+  
+}
+	</style>
+
+</head>
+<body>
+	
+   
+
+
+   
+
+ 
+
+
+
+<div class="hide-on-desktop" aria-labelledby="hide-on-desktop" style="mso-hide: all;">
+
+ <div id="main">
+  
+  <span style="font-size:30px;cursor:pointer;padding:20px;" onClick="openNav()"><i class="fa fa-fw fa-home"></i></span>
+</div>
+
+
+   <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+  <a href="Dashboard.html">Dashboard</a>
+  <a class="act" href="#">Signup</a>
+  <a href="index.html">Login</a>
+  <a href="#">Images</a>
+  <a href="#">Details</a>
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+
+  
+</div>
+     
+
+   
+   <h1 style="font-weight:bold;color:ff5c33;text-align:center;padding: 25px;font-size: 50px;">Garbage Identifier</h1>
+   
+
+
+          <div class="middle">
+     
+    <a href="Dashboard.html" class="btn btn1">Dashboard</a>
+    <a href="index.html" class="btn btn2">&ensp;Log in</a>
+    <a href="#" class="btn btn3 act" >Sign up</a>
+    <a href="#" class="btn btn4">&ensp;Image</a>
+    <a href="#" class="btn btn4">&ensp;Details</a>
+
+   </div>
+
+    
+                <div class="loginbox">
+
+   	<form>
+   		
+   		<p>Email</p>
+<input type="username" id="username" value=""  placeholder="Enter Username"/> <br />
+<span id="messages"> </span>
+ <br />
+
+<p>Password</p>
+ <input type="password" id="password" value="" placeholder="Enter password" />
+ <br />
+<span id="messagess"> </span>
+<br /> 
+
+<p>Repeat Password</p>
+ <input type="password" id="password" value="" placeholder="Re-Enter password" />
+ <br />
+<span id="messagess"> </span>
+<br /> 
+
+     <input type = "submit"  value="Register">
+     
+    
+     
+
+
+
+   	</form>
+
+   </div>
+
+
+                            
+
+</body>
+</html>
